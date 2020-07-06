@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Podca &mdash; Colorlib Website Template</title>
+    <title>Audio Episodes &mdash; DevRel Chat</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#040402">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,700,900"> 
     <link rel="stylesheet" href="fonts/icomoon/style.css">
@@ -16,11 +17,142 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mediaelement@4.2.7/build/mediaelementplayer.min.css">
 
-
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link rel="stylesheet" href="css/aos.css">
 
     <link rel="stylesheet" href="css/style.css">
-    
+    <style>
+      hr.colored {
+  height: 8px;
+  background: linear-gradient(
+    to left,
+    #6DD801,
+    #6DD801,
+    rgb(184, 226, 15) 12.5%,
+    rgba(245, 253, 212, 1) 25%,
+    rgb(15, 224, 60) 100%,
+    rgb(15, 224, 60) 100%,
+    rgba(242, 122, 107, 1) 37.5%,
+    rgba(242, 122, 107, 1) 50%,
+    rgba(223, 157, 185, 1) 50%,
+    rgba(223, 157, 185, 1) 62.5%,
+    rgba(192, 156, 221, 1) 62.5%,
+    rgba(192, 156, 221, 1) 75%,
+    rgba(95, 156, 217, 1) 75%,
+    rgba(95, 156, 217, 1) 87.5%,
+    rgba(94, 190, 227, 1) 87.5%,
+    rgb(15, 224, 60) 100%,
+    rgb(15, 224, 60) 100%
+  );
+}
+.button-main {
+  color: white;
+  background: #6DD801;
+  font-size: 20px;
+  margin: 14px;
+  font-family: inherit;
+  box-sizing: border-box;
+  padding: 11px 48px;
+  border: 0;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: .15s ease-in-out;
+  box-shadow: 0 4px 6px -1px hsl(0 0% 0% / .07), 0 2px 4px -1px hsl(0 0% 0% / .07);
+}
+
+.button-main:hover,
+.button-main:focus {
+  background: #54a304;
+}
+
+.button-main:active {
+  transform: scale(.96);
+}
+
+.button-main2 {
+  color: white;
+  background: #6DD801;
+  font-size: 20px;
+  margin: 14px;
+  font-family: inherit;
+  box-sizing: border-box;
+  padding: 11px 48px;
+  border: 0;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: .15s ease-in-out;
+  box-shadow: 0 4px 6px -1px hsl(0 0% 0% / .07), 0 2px 4px -1px hsl(0 0% 0% / .07);
+}
+
+.button-main2:hover,
+.button-main2:focus {
+  background: #54a304;
+}
+
+.button-main2:active {
+  transform: scale(.96);
+}
+
+.wrap {
+    overflow: hidden;
+    margin: 10px;
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.box {
+    float: left;
+    position: relative;
+    width: 50%;
+    padding-bottom: 34%;
+}
+
+.boxInner {
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    top: 10px;
+    bottom: 10px;
+    overflow: hidden;
+}
+ .boxInner img { width: 100% }
+
+
+@media only screen and (max-width:480px) { 
+    /* Smartphone view: 1 tile */
+    .box {
+        width: 100%;
+        padding-bottom: 85%;
+    }
+}
+@media only screen and (max-width:650px) and (min-width:481px) { 
+    /* Tablet view: 2 tiles */
+    .box {
+        width: 50%;
+        padding-bottom: 35%;
+    }
+}
+@media only screen and (max-width:1050px) and (min-width:651px) { 
+    /* Small desktop / ipad view: 3 tiles */
+    .box {
+        width: 43.3%;
+        padding-bottom: 30%;
+        margin-left: 32px;
+    }
+}
+@media only screen and (max-width:1290px) and (min-width:1051px) { 
+    /* Medium desktop: 4 tiles */
+    .box {
+      width: 46%;
+        padding-bottom: 33%;
+        margin-left: 32px;
+    }
+}
+    </style>
+
+
   </head>
   <body>
   
@@ -34,54 +166,44 @@
       </div>
       <div class="site-mobile-menu-body"></div>
     </div>
-
-
+    
     <header class="site-navbar py-4 absolute transparent" role="banner">
 
       <div class="container">
         <div class="row align-items-center">
-          
 
           <div class="col-3" data-aos="fade-down">
-            <h1><a href="index.html" class="text-white h2">Podca</a></h1>
+            <a href="/"><img class="logo" src="images/logo.png"></a>
           </div>
           <div class="col-9" data-aos="fade-down">
             <nav class="site-navigation position-relative text-right text-md-right" role="navigation">
 
-                
-
                 <div class="d-inline-block ml-md-0 mr-auto py-3"><a href="#" class="site-menu-toggle js-menu-toggle text-white"><span class="icon-menu h3"></span></a></div>
 
                 <ul class="site-menu js-clone-nav d-none">
-                  <li class="has-children">
-                    <a href="index.html">Home</a>
-                    <ul class="dropdown arrow-top">
-                      <li><a href="#">Menu One</a></li>
-                      <li><a href="#">Menu Two</a></li>
-                      <li><a href="#">Menu Three</a></li>
-                      <li class="has-children">
-                        <a href="#">Sub Menu</a>
-                        <ul class="dropdown">
-                          <li><a href="#">Menu One</a></li>
-                          <li><a href="#">Menu Two</a></li>
-                          <li><a href="#">Menu Three</a></li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="has-children">
-                    <a href="#">Dropdown</a>
-                    <ul class="dropdown arrow-top">
-                      <li><a href="#">Menu One</a></li>
-                      <li><a href="#">Menu Two</a></li>
-                      <li><a href="#">Menu Three</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="about.html">About</a></li>
-                  <li class="active"><a href="contact.html">Contact</a></li>
+                  <li><a href="/">Home</a></li>
+                  <li><a href="audio-episodes.html">Audio Episodes</a></li>
+                  <li><a href="video-episodes.html">Video Eposodes</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                  
+                  <!-- <a href="https://anchor.fm/" target="_blank"> <img src="https://www.tn.gov/content/tn/environment/program-areas/opsp-policy-and-sustainable-practices/sp-meet-the-team/the-state-of-sustainability-podcast/jcr%3acontent/content/tn_columnctrl/column_parsys0/tn_image.img.png/1585683863139.png" alt="" style="width:200px; margin-top:50px; margin-right: 10px; margin-left: -14px;" loading="lazy"></a>
+
+                  <a href="https://www.youtube.com/channel/UCwTMR6EuyaBZQF4obn3zemQ/?guided_help_flow=5" target="_blank"><img src="https://ih1.redbubble.net/image.421033767.8936/flat,800x800,075,f.u7.jpg" alt="" style="width:136px; margin-top:50px; margin-right: 10px;" loading="lazy"></a>
+    
+                  <a href="coming-soon.html" target="_blank"><img src="https://www.tn.gov/content/tn/environment/program-areas/opsp-policy-and-sustainable-practices/sp-meet-the-team/the-state-of-sustainability-podcast/jcr%3acontent/content/tn_columnctrl/column_parsys2/tn_image_342576147.img.png/1585683966089.png" alt="" style="width:150px; margin-top:50px; margin-right: 10px;" loading="lazy"></a>
+    
+                  <a href="coming-soon.html" target="_blank"><img src="https://www.tn.gov/content/tn/environment/program-areas/opsp-policy-and-sustainable-practices/sp-meet-the-team/the-state-of-sustainability-podcast/jcr%3acontent/content/tn_columnctrl/column_parsys3/tn_image.img.png/1585683924628.png" alt="" style="width:150px; margin-top:50px; margin-right: 10px;" loading="lazy"></a> -->
                 </ul>
             </nav>
 
+          </div>
+        </div>
+      </div>
+      
+    </header>
+    
+                </ul>
+            </nav>
 
           </div>
 
@@ -90,264 +212,78 @@
       
     </header>
 
-    <div class="site-blocks-cover overlay inner-page-cover" style="background-image: url(images/hero_bg_3.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
+    <div class="site-blocks-cover overlay inner-page-cover" style="background-image: url(images/hero_bg_2.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
       <div class="container">
         <div class="row align-items-center justify-content-center text-center">
           <div class="col-md-7" data-aos="fade-up" data-aos-delay="400">
-            <h2 class="text-white font-weight-light mb-2 display-4">Contact</h2>
-          </div>
-        </div>
-      </div>
-    </div>  
-
-    <div class="site-section">
-      <div class="container" data-aos="fade-up">
-        <div class="row">
-          <div class="col-md-6 mb-5">
-            <form action="#" method="post" class="bg-white">
-              
-              <div class="p-5 p-lg-5 border">
-                <div class="form-group row">
-                  <div class="col-md-6">
-                    <label for="c_fname" class="text-black">First Name <span class="text-danger">*</span></label>
-                    <input type="text" class="form-control" id="c_fname" name="c_fname">
-                  </div>
-                  <div class="col-md-6">
-                    <label for="c_lname" class="text-black">Last Name <span class="text-danger">*</span></label>
-                    <input type="text" class="form-control" id="c_lname" name="c_lname">
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <div class="col-md-12">
-                    <label for="c_email" class="text-black">Email <span class="text-danger">*</span></label>
-                    <input type="email" class="form-control" id="c_email" name="c_email" placeholder="">
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <div class="col-md-12">
-                    <label for="c_subject" class="text-black">Subject </label>
-                    <input type="text" class="form-control" id="c_subject" name="c_subject">
-                  </div>
-                </div>
-
-                <div class="form-group row">
-                  <div class="col-md-12">
-                    <label for="c_message" class="text-black">Message </label>
-                    <textarea name="c_message" id="c_message" cols="30" rows="7" class="form-control"></textarea>
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <div class="col-lg-12">
-                    <input type="submit" class="btn btn-primary btn-lg" value="Send Message">
-                  </div>
-                </div>
-              </div>
-            </form>
-          </div>
-          <div class="col-md-5 pl-md-5">
-            <div class="p-4 border mb-3 bg-white">
-              <p class="mb-0">Address</p>
-              <p class="mb-4">203 Fake St. Mountain View, San Francisco, California, USA</p>
-
-              <p class="mb-0">Phone</p>
-              <p class="mb-4"><a href="#">+1 232 3235 324</a></p>
-
-              <p class="mb-0">Email Address</p>
-              <p class="mb-4"><a href="#">youremail@domain.com</a></p>
-
-            </div>
-            
+          </script><a class="typeform-share button" href="https://form.typeform.com/to/FAKUiUB6" data-mode="popup" style="display:inline-block;text-decoration:none;background-color:#54a304;color:white;cursor:pointer;font-family:Helvetica,Arial,sans-serif;font-size:20px;line-height:50px;text-align:center;margin:0;height:50px;padding:0px 33px;border-radius:25px;width:200px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;" data-hide-headers=true data-hide-footer=true target="_blank">Contact </a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
           </div>
         </div>
       </div>
     </div>
-
-    
-    <div class="site-blocks-cover overlay inner-page-cover" style="background-image: url(images/hero_bg_1.jpg);" data-aos="fade" data-stellar-background-ratio="0.5">
-      <div class="container">
-        <div class="row align-items-center justify-content-center text-center">
-
-          <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <h2>Subscribe</h2>
-            <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit nihil saepe libero sit odio obcaecati veniam.</p>
-            <form action="#" method="post" class="site-block-subscribe">
-                <div class="input-group mb-3">
-                  <input type="text" class="form-control border-secondary text-white bg-transparent" placeholder="Enter Email" aria-label="Enter Email" aria-describedby="button-addon2">
-                  <div class="input-group-append">
-                    <button class="btn btn-primary" type="button" id="button-addon2">Send</button>
-                  </div>
+ </div></div>
+      <footer class="site-footer">
+        <div class="container">
+  
+          <section id="lab_social_icon_footer">
+            <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+            <div class="container">
+                    <div class="text-center center-block">
+                      <a href="https://twitter.com/devrelchat" target="_blank"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
+                      <a href="https://www.facebook.com/shodipo.ayomide" target="_blank"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+                      <a href="https://www.youtube.com/channel/UCpidmaY0_DVjBk1lyHKNxtQ?view_as=subscriber" target="_blank"><i id="social-youtube" class="fa fa-youtube-square fa-3x social"></i></a>
+                         
+                          <a href="mailto:devrelchat@gmail.com"><i id="social-em" class="fa fa-envelope-square fa-3x social"></i></a>
                 </div>
-              </form>
+            </div>
+            </section>
+  
+          <div class="row pt-5 mt-5 text-center">
+            <div class="col-md-12">
+              <p>
+              Copyright &copy; <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear());</script> All rights reserved.
+              </p>
+              <hr class="colored" />
+          </div>
           </div>
         </div>
-      </div>
-    </div>  
-    
-    <footer class="site-footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4">
-            <div class="mb-5">
-              <h3 class="footer-heading mb-4">About Podca</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe pariatur reprehenderit vero atque, consequatur id ratione, et non dignissimos culpa? Ut veritatis, quos illum totam quis blanditiis, minima minus odio!</p>
-            </div>
-
-            <div class="mb-5">
-              <h3 class="footer-heading mb-4">Recent Podcast</h3>
-              <div class="block-25">
-                <ul class="list-unstyled">
-                  <li class="mb-3">
-                    <a href="#" class="d-flex">
-                      <figure class="image mr-4">
-                        <img src="images/img_1.jpg" alt="" class="img-fluid">
-                      </figure>
-                      <div class="text">
-                        <h3 class="heading font-weight-light">Lorem ipsum dolor sit amet consectetur elit</h3>
-                      </div>
-                    </a>
-                  </li>
-                  <li class="mb-3">
-                    <a href="#" class="d-flex">
-                      <figure class="image mr-4">
-                        <img src="images/img_1.jpg" alt="" class="img-fluid">
-                      </figure>
-                      <div class="text">
-                        <h3 class="heading font-weight-light">Lorem ipsum dolor sit amet consectetur elit</h3>
-                      </div>
-                    </a>
-                  </li>
-                  <li class="mb-3">
-                    <a href="#" class="d-flex">
-                      <figure class="image mr-4">
-                        <img src="images/img_1.jpg" alt="" class="img-fluid">
-                      </figure>
-                      <div class="text">
-                        <h3 class="heading font-weight-light">Lorem ipsum dolor sit amet consectetur elit</h3>
-                      </div>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            
-          </div>
-          <div class="col-lg-4 mb-5 mb-lg-0">
-            <div class="row mb-5">
-              <div class="col-md-12">
-                <h3 class="footer-heading mb-4">Quick Menu</h3>
-              </div>
-              <div class="col-md-6 col-lg-6">
-                <ul class="list-unstyled">
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">Matches</a></li>
-                  <li><a href="#">News</a></li>
-                  <li><a href="#">Team</a></li>
-                </ul>
-              </div>
-              <div class="col-md-6 col-lg-6">
-                <ul class="list-unstyled">
-                  <li><a href="#">About Us</a></li>
-                  <li><a href="#">Privacy Policy</a></li>
-                  <li><a href="#">Contact Us</a></li>
-                  <li><a href="#">Membership</a></li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-md-12">
-                <h3 class="footer-heading mb-4">Follow Us</h3>
-
-                <div>
-                  <a href="#" class="pl-0 pr-3"><span class="icon-facebook"></span></a>
-                  <a href="#" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
-                  <a href="#" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
-                  <a href="#" class="pl-3 pr-3"><span class="icon-linkedin"></span></a>
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="col-lg-4 mb-5 mb-lg-0">
-            <div class="mb-5">
-              <h3 class="footer-heading mb-4">Watch Video</h3>
-
-              <div class="block-16">
-                <figure>
-                  <img src="images/img_1.jpg" alt="Image placeholder" class="img-fluid rounded">
-                  <a href="https://vimeo.com/channels/staffpicks/93951774" class="play-button popup-vimeo"><span class="icon-play"></span></a>
-                </figure>
-              </div>
-
-            </div>
-
-            <div class="mb-5">
-              <h3 class="footer-heading mb-2">Subscribe Newsletter</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit minima minus odio.</p>
-
-              <form action="#" method="post">
-                <div class="input-group mb-3">
-                  <input type="text" class="form-control border-secondary text-white bg-transparent" placeholder="Enter Email" aria-label="Enter Email" aria-describedby="button-addon2">
-                  <div class="input-group-append">
-                    <button class="btn btn-primary" type="button" id="button-addon2">Send</button>
-                  </div>
-                </div>
-              </form>
-
-            </div>
-
-          </div>
-          
-        </div>
-        <div class="row pt-5 mt-5 text-center">
-          <div class="col-md-12">
-            <p>
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            Copyright &copy;<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
-            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            </p>
-          </div>
-          
-        </div>
-      </div>
-    </footer>
-  </div>
-
-  <script src="js/jquery-3.3.1.min.js"></script>
-  <script src="js/jquery-migrate-3.0.1.min.js"></script>
-  <script src="js/jquery-ui.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.stellar.min.js"></script>
-  <script src="js/jquery.countdown.min.js"></script>
-  <script src="js/jquery.magnific-popup.min.js"></script>
-  <script src="js/aos.js"></script>
-
-  <script src="js/mediaelement-and-player.min.js"></script>
-
-  <script>
-      document.addEventListener('DOMContentLoaded', function() {
-                var mediaElements = document.querySelectorAll('video, audio'), total = mediaElements.length;
-
-                for (var i = 0; i < total; i++) {
-                    new MediaElementPlayer(mediaElements[i], {
-                        pluginPath: 'https://cdn.jsdelivr.net/npm/mediaelement@4.2.7/build/',
-                        shimScriptAccess: 'always',
-                        success: function () {
-                            var target = document.body.querySelectorAll('.player'), targetTotal = target.length;
-                            for (var j = 0; j < targetTotal; j++) {
-                                target[j].style.visibility = 'visible';
-                            }
+      </footer>
+    </div>
+  
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/aos.js"></script>
+  
+    <script src="js/mediaelement-and-player.min.js"></script>
+  
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+                  var mediaElements = document.querySelectorAll('video, audio'), total = mediaElements.length;
+  
+                  for (var i = 0; i < total; i++) {
+                      new MediaElementPlayer(mediaElements[i], {
+                          pluginPath: 'https://cdn.jsdelivr.net/npm/mediaelement@4.2.7/build/',
+                          shimScriptAccess: 'always',
+                          success: function () {
+                              var target = document.body.querySelectorAll('.player'), targetTotal = target.length;
+                              for (var j = 0; j < targetTotal; j++) {
+                                  target[j].style.visibility = 'visible';
+                              }
+                    }
+                  });
                   }
-                });
-                }
-            });
-    </script>
-
-
-  <script src="js/main.js"></script>
-    
-  </body>
-</html>
+              });
+      </script>
+  
+  
+    <script src="js/main.js"></script>
+      
+    </body>
+  </html>
