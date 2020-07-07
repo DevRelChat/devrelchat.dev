@@ -3,7 +3,7 @@
     "short_name": "DevRel Chat",
     "theme_color": "#040402",
     "background_color": "#6dd801",
-    "display": "fullscreen",
+    "display": "standalone",
     "Scope": "/",
     "start_url": "/",
     "icons": [
