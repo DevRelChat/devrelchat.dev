@@ -1567,6 +1567,9 @@ a:hover {
 #lab_social_icon_footer #social-youtube:hover {
   color: red;
 }
+#lab_social_icon_footer #social-github:hover {
+  color: black;
+}
 
 #lab_social_icon_footer #social-gp:hover {
   color: #d34836;
