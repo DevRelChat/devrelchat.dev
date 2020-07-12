@@ -804,8 +804,9 @@ a:hover {
 @media screen and (max-width: 768px) and (max-width: 480px) {
   .video {
     padding-top: 1px !important;
-    width: 345px !important;
+    width: 315px !important;
     height: 300px;
+    
   }
 }
 
